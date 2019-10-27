@@ -21,6 +21,8 @@ namespace UT61_multimeter
         {
             Form loading = new Loading_Screen();
             loading.Show();
+            
+
         }
                 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -31,6 +33,12 @@ namespace UT61_multimeter
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void rSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form settings_form = new RS_Settings();
+            settings_form.Show();
         }
     }
 }
