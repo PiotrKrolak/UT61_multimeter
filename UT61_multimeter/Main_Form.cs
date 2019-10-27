@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace UT61_multimeter
 {
@@ -22,7 +23,6 @@ namespace UT61_multimeter
             Form loading = new Loading_Screen();
             loading.Show();
             
-
         }
                 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -40,5 +40,13 @@ namespace UT61_multimeter
             Form settings_form = new RS_Settings();
             settings_form.Show();
         }
+
+        private void databaseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            string filename = openFileDialog1.FileName;
+            string readfile = File.ReadAllText(filename);
+        }
+        
     }
 }
