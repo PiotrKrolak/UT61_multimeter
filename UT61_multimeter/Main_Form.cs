@@ -16,5 +16,21 @@ namespace UT61_multimeter
         {
             InitializeComponent();
         }
+
+        private void Main_Form_Load(object sender, EventArgs e)
+        {
+            Form loading = new Loading_Screen();
+            loading.Show();
+        }
+                
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Aplikacja obsługująca pomiary multimetru UT61.");
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

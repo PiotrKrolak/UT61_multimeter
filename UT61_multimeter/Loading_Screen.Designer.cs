@@ -28,10 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Loading_Screen));
+            this.SuspendLayout();
+            // 
+            // Loading_Screen
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Loading_Screen";
+            this.BackgroundImage = global::UT61_multimeter.Properties.Resources.loading_screen_jabil;
+            this.ClientSize = new System.Drawing.Size(468, 445);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(484, 484);
+            this.MinimumSize = new System.Drawing.Size(484, 484);
+            this.Name = "Loading_Screen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Loading Screen";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
