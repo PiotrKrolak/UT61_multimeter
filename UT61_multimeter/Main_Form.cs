@@ -13,16 +13,19 @@ namespace UT61_multimeter
 {
     public partial class Main_Form : Form
     {
+        public static Main_Form main_f;
+
         public Main_Form()
         {
             InitializeComponent();
+            main_f = this;
         }
 
         private void Main_Form_Load(object sender, EventArgs e)
         {
             Form loading = new Loading_Screen();
             loading.Show();
-            
+            //this.Hide();
         }
                 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
